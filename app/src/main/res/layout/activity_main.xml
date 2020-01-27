@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageViewBackgtoundLogin"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:background="@drawable/backgroud_login"
+        android:paddingTop="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageLogo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/logo_sina"
+        app:layout_constraintBottom_toBottomOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintEnd_toEndOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintStart_toStartOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintTop_toTopOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_default"
+        android:padding="10dp"
+        android:shadowColor="@color/colorAccent"
+        android:text="@string/entrar"
+        app:layout_constraintBottom_toBottomOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintEnd_toEndOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintStart_toStartOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintTop_toTopOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <EditText
+        android:id="@+id/edit_text_login"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Usuario"
+        app:layout_constraintBottom_toBottomOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintEnd_toEndOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintTop_toTopOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <EditText
+        android:id="@+id/edit_text_senha"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Senha"
+        android:password="true"
+        app:layout_constraintBottom_toBottomOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintEnd_toEndOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintTop_toTopOf="@id/appCompatImageViewBackgtoundLogin"
+        app:layout_constraintVertical_bias="0.69" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
